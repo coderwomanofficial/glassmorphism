@@ -43,9 +43,9 @@ const updateCSSWithInput = () => {
   const rgbValue = chroma(colorBackground).rgb();
 
   if (outlineBox.checked) {
-    generatedCSS.value = `background: rgba(${rgbValue[0]}, ${rgbValue[1]}, ${rgbValue[2]}, ${transValueFormatted}) \nbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\nbackdrop-filter: blur(${blurValue}px);\n-webkit-backdrop-filter: blur(${blurValue}px);\nborder-radius: 10px;\nborder: 1px solid rgba(255, 255, 255, 0.18);`;
+    generatedCSS.value = `background: rgba(${rgbValue[0]}, ${rgbValue[1]}, ${rgbValue[2]}, ${transValueFormatted});\nbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\nbackdrop-filter: blur(${blurValue}px);\n-webkit-backdrop-filter: blur(${blurValue}px);\nborder-radius: 10px;\nborder: 1px solid rgba(255, 255, 255, 0.18);`;
   } else {
-    generatedCSS.value = `background: rgba(${rgbValue[0]}, ${rgbValue[1]}, ${rgbValue[2]}, ${transValueFormatted}) \nbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\nbackdrop-filter: blur(${blurValue}px);\n-webkit-backdrop-filter: blur(${blurValue}px);\nborder-radius: 10px;\n`;
+    generatedCSS.value = `background: rgba(${rgbValue[0]}, ${rgbValue[1]}, ${rgbValue[2]}, ${transValueFormatted});\nbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\nbackdrop-filter: blur(${blurValue}px);\n-webkit-backdrop-filter: blur(${blurValue}px);\nborder-radius: 10px;\n`;
   }
 }
 
